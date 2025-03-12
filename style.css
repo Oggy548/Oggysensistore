@@ -1,0 +1,98 @@
+.background_div {
+    background-image: linear-gradient( rgb(0, 0, 0),rgb(65, 0, 59)); 
+    
+    
+}
+
+.gold-text {
+    background-image: linear-gradient(to bottom, #fdf68c, #f4cd2a);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 28px;
+    font-weight: bold;
+
+    /* Adding text-shadow for 3D effect */
+    text-shadow: 
+        2px 2px 2px rgba(255,244,0, 0.3),  /* Shadow for depth */
+        2px 2px 2px rgba(253,191,0, 0.4),  /* More shadow for more depth */
+        0px 0px 2px rgba(253,191,0, 0.5);  /* Stronger shadow for more emphasis */
+
+    /* Optional: Slightly skew the text for a 3D-like tilt */
+    transform: perspective(500px);
+}
+
+
+
+.image_backgroud{
+    background-image: url("resources/backgroundImg1.jpg");
+    width: 100%;
+    height: 100%;
+    
+  
+}
+
+
+.image_backgroud2{
+    background-image: url("resources/backgroundImg2.png");
+    width: 100%;
+    height: 100%;
+    
+  
+}
+
+.features_div {
+    background-image: linear-gradient( rgb(0, 0, 0),rgb(65, 0, 59),rgb(0,0,0)); 
+      
+}
+
+.mobile_card {
+    background-image: linear-gradient( rgb(35, 35, 35),rgb(50, 0, 45)); 
+      
+}
+
+.mobile_card_background{
+    color: rgb(31, 31, 31);
+}
+
+
+.background_color{
+    background-color: aqua;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 100px 0;
+}
+
+/* Footer */
+.footer {
+    background: #111;
+}
+
+@font-face {
+    font-family: 'customFont'; 
+    src: url('resources/Rowdies-Bold.ttf') format('truetype'); 
+  }
+
+  @font-face {
+    font-family: 'customFont2'; 
+    src: url('resources/Rowdies-Regular.ttf') format('truetype'); 
+  }
+  
+  .custom-font {
+    font-family: 'customFont', sans-serif;
+  }
+
+  .custom-font2 {
+    font-family: 'customFont2', sans-serif;
+  }
+
+
+  .hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+@keyframes hu__hu__ {
+    50% { transform: translateY(10px) }
+}
+  
+
