@@ -59,6 +59,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+function caculateDPI() {
+
+    const numberDPI = document.getElementById("dpi_input").value;
+    const balance = numberDPI * 0.55 + parseInt(numberDPI);
+    const box = document.getElementById("dpi_box");
+    const loader = document.getElementById("dpi_loader");
+
+    box.classList.add("d-none");
+    loader.classList.add("loader");
+    setTimeout(() => {
+        loader.classList.remove("loader");
+        box.classList.remove("d-none");
+        box.classList.add("animate__animated", "animate__slideInDown");
+        document.getElementById("dpi_balance").innerHTML = balance + " dp";
+    }, 2000);
+
+
+}
+
+
 
 
 
