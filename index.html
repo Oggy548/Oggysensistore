@@ -114,6 +114,34 @@
       </div>
     </section>
 
+    <section>
+      <div class="bg-black">
+        <div class="text-center mb-4">
+          <h1 class="text-white custom-font">TYPE YOUR DEFAULT DPI HERE</h1>
+        </div>
+        <div class="d-flex column-gap-2 col-4 offset-4">
+          <input
+            class="form-control"
+            type="number"
+            id="dpi_input"
+            placeholder="Type your default DPI here"
+          />
+          <button class="btn btn-danger" onclick="caculateDPI()">Find</button>
+        </div>
+        <div class="d-flex justify-content-center mt-3 mb-3">
+          <span id="dpi_loader"></span>
+        </div>
+        <div
+          class="mt-2 mb-2 d-flex flex-row col-12 justify-content-center d-none"
+          id="dpi_box"
+        >
+          <h4 class="text-white custom-font2">SUITED DPI FOR YOU -</h4>
+          &nbsp;
+          <button class="btn bg-white fw-bold" id="dpi_balance"></button>
+        </div>
+      </div>
+    </section>
+
     <!-- sell Section -->
     <section id="features" class="py-5 text-center features_div">
       <div class="container">
