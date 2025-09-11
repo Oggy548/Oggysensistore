@@ -78,6 +78,34 @@ function caculateDPI() {
 
 }
 
+function accessIOS() {
+
+    const accessIOSbtn = document.getElementById("accessIOSbtn");
+
+
+    const adminusername = "saviru";
+    const adminpassword = "1234";
+
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (username == adminusername && password == adminpassword) {
+
+
+        window.location = "iosloading.html";
+    } else {
+        alert("Wrong credentials");
+
+    }
+
+}
+
+
+
+
+
+
+
 
 
 
