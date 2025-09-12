@@ -83,8 +83,8 @@ function accessIOS() {
     const accessIOSbtn = document.getElementById("accessIOSbtn");
 
 
-    const adminusername = "saviru";
-    const adminpassword = "1234";
+    const adminusername = "oggy";
+    const adminpassword = "1111";
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -99,6 +99,7 @@ function accessIOS() {
     }
 
 }
+
 
 
 
