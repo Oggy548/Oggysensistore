@@ -78,19 +78,29 @@ function caculateDPI() {
 
 }
 
+
+function loadPage(page) {
+    fetch(page)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("new_content").innerHTML = html;
+        });
+}
+
 function accessIOS() {
 
     const accessIOSbtn = document.getElementById("accessIOSbtn");
 
 
-    const adminusername = "oggysensi";
-    const adminpassword = "user12";
+    const adminusername = "saviru";
+    const adminpassword = "1234";
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
     if (username == adminusername && password == adminpassword) {
 
+        //loadPage('iosloading.html');
 
         window.location = "iosloading.html";
     } else {
@@ -100,10 +110,12 @@ function accessIOS() {
 
 }
 
-
-
-
-
+document.addEventListener("DOMContentLoaded", () => {
+    if (sessionStorage.getItem("showSuccess") === "true") {
+        loadPage("iossuccess.html");
+        sessionStorage.removeItem("showSuccess"); // clear flag after use
+    }
+});
 
 
 
