@@ -1,12 +1,8 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-    loadSuccessPage();
-});
-
-function loadSuccessPage() {
-
-    setTimeout(function () {
-        window.location = "iossuccess.html";
+    setTimeout(() => {
+        // Set a temporary flag in sessionStorage
+        sessionStorage.setItem("showSuccess", "true");
+        // Redirect back to ioscodes.html
+        window.location = "ioscodes.html";
     }, 3000);
-
-}
+});
