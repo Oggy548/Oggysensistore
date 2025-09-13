@@ -111,12 +111,16 @@ function accessIOS() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    if (sessionStorage.getItem("showSuccess") === "true") {
+    if (localStorage.getItem("showSuccess") === "true") {
         loadPage("iossuccess.html");
-        sessionStorage.removeItem("showSuccess"); // clear flag after use
+        //sessionStorage.removeItem("showSuccess"); 
     }
 });
 
+function logout() {
+    localStorage.removeItem("showSuccess");
+    window.location = "ioscodes.html";
+}
 
 
 
