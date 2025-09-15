@@ -92,7 +92,7 @@ function accessIOS() {
     const accessIOSbtn = document.getElementById("accessIOSbtn");
 
 
-    const adminusername = "saviru";
+    const adminusername = "oggy";
     const adminpassword = "1234";
 
     const username = document.getElementById("username").value;
@@ -121,6 +121,7 @@ function logout() {
     localStorage.removeItem("showSuccess");
     window.location = "ioscodes.html";
 }
+
 
 
 
