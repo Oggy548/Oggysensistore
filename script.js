@@ -93,7 +93,7 @@ function accessIOS() {
 
 
     const adminusername = "OGGYSENSI";
-    const adminpassword = "V3actServer";
+    const adminpassword = "OSv3server";
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -121,6 +121,7 @@ function logout() {
     localStorage.removeItem("showSuccess");
     window.location = "ioscodes.html";
 }
+
 
 
 
