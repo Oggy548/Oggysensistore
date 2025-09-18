@@ -2,6 +2,14 @@ function callme() {
     window.location.href = "https://wa.me/+94712901128";
 }
 
+function callChannel() {
+    window.location.href = "https://whatsapp.com/channel/0029VavP4pm60eBf0K98Yp2l";
+}
+
+function callGroup() {
+    window.location.href = "https://chat.whatsapp.com/H3MyNa8TMvt90iX3cJJlAg?mode=ems_copy_c";
+}
+
 function opentiktok() {
     window.location.href = "https://www.tiktok.com/@oggy.yt_1";
 }
@@ -92,8 +100,8 @@ function accessIOS() {
     const accessIOSbtn = document.getElementById("accessIOSbtn");
 
 
-    const adminusername = "OGGYSENSI";
-    const adminpassword = "Ojsu3";
+    const adminusername = "saviru";
+    const adminpassword = "1234";
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -121,47 +129,6 @@ function logout() {
     localStorage.removeItem("showSuccess");
     window.location = "ioscodes.html";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
