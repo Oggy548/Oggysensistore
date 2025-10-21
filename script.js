@@ -1,4 +1,5 @@
-function callme() {
+
+afunction callme() {
     window.location.href = "https://wa.me/+94712901128";
 }
 
@@ -101,7 +102,7 @@ function accessIOS() {
 
 
     const adminusername = "OGGYSENSI";
-    const adminpassword = "V0os3server";
+    const adminpassword = "OGv3xSEr";
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -129,6 +130,7 @@ function logout() {
     localStorage.removeItem("showSuccess");
     window.location = "ioscodes.html";
 }
+
 
 
 
