@@ -1,5 +1,5 @@
 
-afunction callme() {
+function callme() {
     window.location.href = "https://wa.me/+94712901128";
 }
 
@@ -130,6 +130,7 @@ function logout() {
     localStorage.removeItem("showSuccess");
     window.location = "ioscodes.html";
 }
+
 
 
 
