@@ -102,7 +102,7 @@ function accessIOS() {
 
 
     const adminusername = "OGGYSENSI";
-    const adminpassword = "gosjb68u";
+    const adminpassword = "g773hih8u";
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -130,6 +130,7 @@ function logout() {
     localStorage.removeItem("showSuccess");
     window.location = "ioscodes.html";
 }
+
 
 
 
