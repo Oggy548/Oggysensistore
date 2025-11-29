@@ -1,10 +1,9 @@
-
 function callme() {
     window.location.href = "https://wa.me/+94712901128";
 }
 
 function callChannel() {
-    window.location.href = "https://whatsapp.com/channel/0029VbBQq25CsU9NMWnehk2E";
+    window.location.href = "https://whatsapp.com/channel/0029VavP4pm60eBf0K98Yp2l";
 }
 
 function callGroup() {
@@ -93,6 +92,7 @@ function loadPage(page) {
         .then(response => response.text())
         .then(html => {
             document.getElementById("new_content").innerHTML = html;
+            startCounter();
         });
 }
 
@@ -101,8 +101,8 @@ function accessIOS() {
     const accessIOSbtn = document.getElementById("accessIOSbtn");
 
 
-    const adminusername = "OGGYSENSI";
-    const adminpassword = "Xvush67";
+    const adminusername = "saviru";
+    const adminpassword = "1234";
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -132,129 +132,20 @@ function logout() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function startCounter() {
+    $('.counter-count').each(function () {
+        $(this).prop('Counter', 0).animate(
+            { Counter: $(this).text() },
+            {
+                duration: 5000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            }
+        );
+    });
+}
 
 
 
