@@ -6,8 +6,12 @@ function callChannel() {
     window.location.href = "https://whatsapp.com/channel/0029VavP4pm60eBf0K98Yp2l";
 }
 
-function callGroup() {
+function callGroup1() {
     window.location.href = "https://chat.whatsapp.com/H3MyNa8TMvt90iX3cJJlAg?mode=ems_copy_c";
+}
+
+function callGroup2() {
+    window.location.href = "https://chat.whatsapp.com/HzhX6eKxotZHqzb8QyRaHN?mode=hqrc";
 }
 
 function opentiktok() {
@@ -146,6 +150,7 @@ function startCounter() {
         );
     });
 }
+
 
 
 
