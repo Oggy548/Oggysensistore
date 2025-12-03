@@ -106,7 +106,7 @@ function accessIOS() {
 
 
     const adminusername = "OGGYSENSI";
-    const adminpassword = "NIH7um07";
+    const adminpassword = "xijh6in";
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -150,6 +150,7 @@ function startCounter() {
         );
     });
 }
+
 
 
 
