@@ -1,5 +1,5 @@
 function callme() {
-    window.location.href = "https://wa.me/+94712901128";
+    window.location.href = "https://wa.me/+94761954162";
 }
 
 function callChannel() {
@@ -150,6 +150,7 @@ function startCounter() {
         );
     });
 }
+
 
 
 
