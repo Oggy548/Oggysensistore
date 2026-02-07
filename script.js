@@ -3,7 +3,7 @@ function callme() {
 }
 
 function callChannel() {
-    window.location.href = "https://whatsapp.com/channel/0029VbBQq25CsU9NMWnehk2E";
+    window.location.href = "https://whatsapp.com/channel/0029VbCU4FJ2kNFzSNBxMu1S";
 }
 
 function callGroup1() {
@@ -150,6 +150,7 @@ function startCounter() {
         );
     });
 }
+
 
 
 
