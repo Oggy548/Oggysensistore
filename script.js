@@ -106,7 +106,7 @@ function accessIOS() {
 
 
     const adminusername = "OGGYSENSI";
-    const adminpassword = "Ooj9887";
+    const adminpassword = "muh6767";
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
