@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <title>Oggy Sensi · Pro Gaming Tools</title>
-    <link rel="icon" href="resources/sensi_logo.png" />
+    <link rel="icon" href="resources/oggy_logo2.png" />
     <!-- Font Awesome 6 -->
     <link
       rel="stylesheet"
@@ -37,7 +37,7 @@
 
       body {
         font-family: "Inter", sans-serif;
-        background-color: #0a0c10;
+        background-color: #000000;
         color: #eef2ff;
         overflow-x: hidden;
       }
@@ -69,12 +69,12 @@
       }
 
       .neon-border:hover {
-        border-color: #800080;
-        box-shadow: 0 0 20px #800080;
+        border-color: #bf40bf;
+        box-shadow: 0 0 20px #bf40bf;
       }
 
       .btn-neon {
-        background: linear-gradient(95deg, #800080 0%, #a0148f 100%);
+        background: linear-gradient(95deg, #bf40bf 0%, #a0148f 100%);
         border: none;
         color: white;
         font-weight: 700;
@@ -92,17 +92,17 @@
       }
 
       .btn-outline-neon {
-        border: 1.5px solid #800080;
+        border: 1.5px solid #bf40bf;
         background: transparent;
-        color: #800080;
+        color: #bf40bf;
         font-weight: 600;
         transition: 0.2s;
       }
 
       .btn-outline-neon:hover {
-        background: #800080;
+        background: #bf40bf;
         color: #0a0c10;
-        box-shadow: 0 0 12px #800080;
+        box-shadow: 0 0 12px #bf40bf;
       }
 
       .glass-card {
@@ -123,7 +123,7 @@
 
       .pricing-card:hover {
         transform: translateY(-8px);
-        border-color: #800080;
+        border-color: #bf40bf;
         box-shadow: 0 20px 35px -15px rgba(206, 28, 183, 0.3);
       }
 
@@ -135,7 +135,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 24px;
-        color: #800080;
+        color: #bf40bf;
         font-size: 1.6rem;
       }
 
@@ -157,11 +157,11 @@
         font-weight: 700;
         font-size: 1.25rem;
         box-shadow: none;
-        border-bottom: 1px solid rgba(206, 28, 183, 0.3);
+        border: 2px solid rgba(206, 28, 183, 0.3);
       }
 
       .accordion-button-custom:not(.collapsed) {
-        color: #800080 !important;
+        color: #bf40bf !important;
         background: transparent !important;
       }
 
@@ -191,7 +191,7 @@
       }
 
       .custom-font-badge {
-        background: linear-gradient(120deg, #800080, #ff67e0);
+        background: linear-gradient(120deg, #bf40bf, #ff67e0);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -206,7 +206,7 @@
       .spinner-border-sm-neon {
         width: 1.2rem;
         height: 1.2rem;
-        border: 0.2em solid #800080;
+        border: 0.2em solid #bf40bf;
         border-right-color: transparent;
         border-radius: 50%;
         animation: spin 0.6s linear infinite;
@@ -230,8 +230,8 @@
 
       /* platform gif container */
       .platform-gif {
-        width: 20rem; /* 200px ÷ 16 */
-        height: 20rem;
+        width: 25rem; /* 200px ÷ 16 */
+        height: 25rem;
         border-radius: 20px;
         object-fit: cover;
         background: rgba(206, 28, 183, 0.1);
@@ -256,7 +256,7 @@
       }
 
       .plan-details-grid::-webkit-scrollbar-thumb {
-        background: #800080;
+        background: #bf40bf;
         border-radius: 4px;
       }
 
@@ -283,6 +283,155 @@
           justify-content: center !important;
         }
       }
+
+      /* ============================================
+           BUTTON STYLES - EXACT DESIGN FROM NIKE CHEATS
+           ============================================ */
+
+      .btn-garanta {
+        /* base appearance */
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem; /* spacing between text and arrow */
+        background: linear-gradient(135deg, #9333ea, #c026d3, #a21caf);
+        background-size: 200% 200%;
+        color: white;
+        font-weight: 900; /* EXTRA BOLD */
+        font-size: 1.25rem; /* ~20px, but responsive */
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 1.5rem; /* rounded-2xl equivalent (24px) */
+        cursor: pointer;
+        text-decoration: none;
+        font-family: inherit;
+        transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.5),
+          0 8px 20px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        z-index: 1;
+        white-space: nowrap;
+        /* animation for gradient movement */
+        animation: gradientMove 3s ease infinite;
+      }
+
+      /* shine overlay effect (moving light streak) */
+      .btn-garanta::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        transform: skewX(-20deg);
+        transition: left 0.75s ease;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      /* shine animation on hover (like original) */
+      .btn-garanta:hover::before {
+        left: 150%;
+      }
+
+      /* arrow icon styling (lucide arrow-right simulation) */
+      .btn-icon {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: transform 0.3s ease, filter 0.2s;
+        filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
+      }
+
+      /* hover effect: scale + stronger shadow + arrow movement */
+      .btn-garanta:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 35px rgba(168, 85, 247, 0.85),
+          0 12px 28px rgba(0, 0, 0, 0.5);
+      }
+
+      .btn-garanta:hover .btn-icon {
+        transform: translateX(6px) scale(1.1);
+      }
+
+      /* active press effect */
+      .btn-garanta:active {
+        transform: scale(0.97);
+        transition: transform 0.1s ease;
+      }
+
+      /* Keyframes for moving gradient background (like original gradient animation) */
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* optional subtle pulse effect on text (matches the brand aggressive style) */
+      .btn-garanta span {
+        position: relative;
+        z-index: 3;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      /* Responsive: adjust font size and padding on smaller screens */
+      @media (max-width: 550px) {
+        .btn-garanta {
+          font-size: 0.9rem;
+          padding: 0.85rem 1.6rem;
+          border-radius: 2rem;
+          gap: 0.5rem;
+        }
+        .btn-icon {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+
+      /* Extra: additional background glow on the container to replicate gaming style */
+      .wrapper-glow {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 3rem;
+        padding: 1rem;
+        display: inline-block;
+        backdrop-filter: blur(2px);
+      }
+
+      /* demo description */
+      .info {
+        margin-top: 2.5rem;
+        color: #a0a0b0;
+        font-size: 0.85rem;
+        border-top: 1px solid rgba(168, 85, 247, 0.3);
+        padding-top: 1.5rem;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .info code {
+        background: #1e1a2f;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.5rem;
+        color: #c084fc;
+        font-family: monospace;
+      }
     </style>
   </head>
   <body class="bg-dark-void">
@@ -298,14 +447,14 @@
       <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
           <img
-            src="resources/sensi_logo.png"
+            src="resources/oggy_logo2.png"
             alt="logo"
             width="44"
             height="44"
-            style="filter: drop-shadow(0 0 6px #800080)"
+            style="filter: drop-shadow(0 0 6px #bf40bf)"
           />
           <span class="fw-bold fs-4 text-white"
-            >OGGY<span class="text-gradient" style="color: #800080"
+            >OGGY<span class="text-gradient" style="color: #bf40bf"
               >SENSI</span
             ></span
           >
@@ -362,57 +511,72 @@
             <div class="mb-3">
               <span
                 class="badge bg-dark text-white-50 px-3 py-2 rounded-pill border border-secondary"
-                ><i class="fas fa-gamepad me-1 text-danger"></i> #1 Gaming Sensi
+                ><i class="fas fa-gamepad me-1 text-danger"></i> #1 Mobile Sensi
                 Store</span
               >
             </div>
             <h1 class="display-3 fw-bold text-white">
-              Level Up Your<br /><span class="custom-font-badge"
-                >Game & Sensitivity</span
+              LEVELUP YOUR GAME<br /><span class="custom-font-badge"
+                >GAME & SENSITIVITY</span
               >
             </h1>
             <p class="lead text-white-50 my-4">
-              Unlock pro configs, FPS boost, and lifetime VIP updates. Android &
-              iOS — Play like a beast.
+              GET OUR VIP SENSI AND IMPROVE YOUR GAMEPLAY , ACCURACY AND BECOME
+              A PRO
             </p>
             <div
               class="d-flex flex-wrap gap-3 hero-buttons justify-content-center justify-content-lg-start"
             >
-              <button
-                class="btn btn-neon rounded-pill px-5 py-3 fs-5"
-                onclick="callme()"
-              >
-                <i class="fab fa-whatsapp me-2"></i>Get Sensi Pack
-              </button>
-              <button
-                class="btn btn-outline-neon rounded-pill px-5 py-3 fs-5"
-                onclick="callChannel()"
-              >
-                <i class="fab fa-whatsapp me-2"></i>Join Channel
-              </button>
+              <div class="wrapper-glow">
+                <!-- MAIN BUTTON: exact replica of "GARANTA SEU PRODUTO" design with animation -->
+                <a
+                  class="btn-garanta"
+                  aria-label="Garanta seu produto"
+                  href="#pricing"
+                >
+                  <span>
+                    Get Sensi Pack
+                    <!-- Arrow right SVG (matching Lucide ArrowRight style) -->
+                    <svg
+                      class="btn-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
             </div>
+
             <div
               class="mt-5 d-flex gap-4 flex-wrap justify-content-center justify-content-lg-start"
             >
-              <div>
-                <i class="fas fa-check-circle text-success me-1"></i> Lifetime
-                updates
+              <div class="fw-lighter">
+                <i class="fa-solid fa-shield me-1"></i> 100% Safe & Clean
               </div>
-              <div>
-                <i class="fas fa-check-circle text-success me-1"></i> 24/7
-                Support
+              <div class="fw-lighter">
+                <i class="fa-solid fa-users me-1"></i> 7000+ Active Users
               </div>
-              <div>
-                <i class="fas fa-check-circle text-success me-1"></i> No Ban
+              <div class="fw-lighter">
+                <i class="fa-solid fa-award me-1"></i> No Ban Guarnatee
               </div>
             </div>
           </div>
           <div class="col-lg-6 text-center reveal">
             <div class="glass-card p-4">
               <img
-                src="resources/sensi_logo.png"
-                style="width: 130px; filter: drop-shadow(0 0 12px #800080)"
-                class="mb-3"
+                src="resources/oggy_logo2.png"
+                style="width: 180px; filter: drop-shadow(0 0 6px #bf40bf)"
+                class="mb-3 mb-5 animate__animated animate__tada animate__slow animate__delay-3s animate__infinite"
               />
               <h2 class="h3">OGGY SENSI PACK</h2>
               <div class="ratio ratio-16x9 mt-3 rounded-4 overflow-hidden">
@@ -421,11 +585,6 @@
                   title="sensi preview"
                   allowfullscreen
                 ></iframe>
-              </div>
-              <div
-                class="mt-3 alert alert-danger bg-transparent border-danger text-warning small"
-              >
-                🔥 SPECIAL OFFER: Get CapCut Premium + Editing Pack FREE
               </div>
             </div>
           </div>
@@ -452,8 +611,11 @@
               </div>
               <h4 class="fw-bold">Play like a Pro</h4>
               <p class="text-white-50">
-                Headshot tricks, regs & configs. Master sensitivity and movement
-                like a competitive player.
+                Those who buy sensi pack from us will get the most suitable
+                regs, commands and config files and you will get freefire video
+                editing methods like a pro.With our sensi pack, we'll teach you
+                how to set the most suitable sensitivity, as well as secret tips
+                for hitting headshots in the game.
               </p>
             </div>
           </div>
@@ -464,8 +626,10 @@
               </div>
               <h4 class="fw-bold">Optimization+</h4>
               <p class="text-white-50">
-                Reduce crashes by 70%, unlock 120 FPS, secret device tweaks — no
-                need for flagship phone.
+                You DON'T NEED to have a good phone for your game to run
+                smoothly. All you need to do is know how to change the secret
+                and correct settings on your device, and also use our tool,
+                which will reduce your game's crashes by 70%.
               </p>
             </div>
           </div>
@@ -476,8 +640,9 @@
               </div>
               <h4 class="fw-bold">24/7 Support</h4>
               <p class="text-white-50">
-                Real human assistance, lifetime updates, and personalized DPI
-                recommendations.
+                No more fake or fake sensitivities ! The sensitivities we
+                provide with our tools are studied and approved for all types of
+                DEVICES.
               </p>
             </div>
           </div>
@@ -533,9 +698,7 @@
           <h2 class="fw-bold">
             <span class="custom-font-badge">⚡ Choose your platform</span>
           </h2>
-          <p class="text-white-50">
-            Full lifetime access + CapCut Premium & editing bonuses
-          </p>
+          <p class="text-white-50">Full lifetime access</p>
         </div>
         <div class="row g-5 justify-content-center">
           <!-- ANDROID CARD with 1:1 GIF & Collapse Arrow -->
@@ -564,7 +727,7 @@
                     right: 16px;
                     font-size: 0.75rem;
                   "
-                  >PREMIUM</span
+                  >20% OFF</span
                 >
               </div>
               <h2 class="mt-2 fw-bold">ANDROID PACK</h2>
@@ -691,12 +854,35 @@
                 </div>
               </div>
 
-              <button
-                class="btn btn-neon w-100 mt-4 rounded-pill py-2"
-                onclick="callme()"
-              >
-                <i class="fab fa-whatsapp"></i> Buy Now — Android
-              </button>
+              <div class="wrapper-glow" style="width: 100%">
+                <!-- MAIN BUTTON: exact replica of "GARANTA SEU PRODUTO" design with animation -->
+                <button
+                  style="display: block; width: 100%"
+                  class="btn-garanta w-100"
+                  aria-label="Garanta seu produto"
+                  onclick="callme()"
+                >
+                  <span>
+                    Buy Now
+                    <!-- Arrow right SVG (matching Lucide ArrowRight style) -->
+                    <svg
+                      class="btn-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
 
@@ -711,7 +897,7 @@
                   class="platform-gif overflow-hidden bg-dark rounded-4 d-flex align-items-center justify-content-center border border-secondary"
                 >
                   <img
-                    src="resources/ios.gif"
+                    src="resources/ios.GIF"
                     alt="ios gif"
                     style="width: 100%; height: 100%; object-fit: cover"
                     onerror="this.src='https://placehold.co/200x200/ce1cb7/white?text=iOS'"
@@ -726,10 +912,10 @@
                     right: 16px;
                     font-size: 0.75rem;
                   "
-                  >PREMIUM</span
+                  >20% OFF</span
                 >
               </div>
-              <h2 class="mt-2 fw-bold">iOS PACK</h2>
+              <h2 class="mt-2 fw-bold">IOS PACK</h2>
               <div class="my-2">
                 <span class="display-5 fw-bold text-white">LKR 2000</span
                 ><span class="text-white-50"> / $6.51</span>
@@ -820,12 +1006,35 @@
                 </div>
               </div>
 
-              <button
-                class="btn btn-neon w-100 mt-4 rounded-pill py-2"
-                onclick="callme()"
-              >
-                <i class="fab fa-whatsapp"></i> Buy Now — iOS
-              </button>
+              <div class="wrapper-glow" style="width: 100%">
+                <!-- MAIN BUTTON: exact replica of "GARANTA SEU PRODUTO" design with animation -->
+                <button
+                  style="display: block; width: 100%"
+                  class="btn-garanta w-100"
+                  aria-label="Garanta seu produto"
+                  onclick="callme()"
+                >
+                  <span>
+                    Buy Now
+                    <!-- Arrow right SVG (matching Lucide ArrowRight style) -->
+                    <svg
+                      class="btn-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -884,9 +1093,10 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body-custom p-3 text-white-50">
-                    No! Our Sensi packs are NOT hacks. They provide configs,
-                    regs, optimization methods, and professional lessons to
-                    improve gameplay — completely legit and account safe.
+                    No ! Our sensi packs are not hacks. Our sensi packs provide
+                    you with supportive methods that you need to improve your
+                    game playing skills and move forward. They do not contain
+                    any hacks for the game.
                   </div>
                 </div>
               </div>
@@ -906,9 +1116,9 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body-custom p-3 text-white-50">
-                    Zero ban risk. We guarantee safety, and we take
-                    responsibility if any issue occurs with our methods. 100%
-                    undetectable.
+                    No ! Using our sensi pack will not cause any problems with
+                    your account. We are responsible if anything happens
+                    using our Sensi.
                   </div>
                 </div>
               </div>
@@ -928,8 +1138,9 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body-custom p-3 text-white-50">
-                    Immediately after purchase via WhatsApp DM. You receive
-                    lifetime access and free updates.
+                    You can buy our sensi by sending us a direct message. This
+                    comes as a pack and can be easily made at any time.
+                    Therefore, we definitely recommend our sensi.
                   </div>
                 </div>
               </div>
@@ -949,8 +1160,12 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body-custom p-3 text-white-50">
-                    LIFETIME + free VIP updates. One device license ensures
-                    optimal performance.
+                    We give you lifetime access and you will receive free pack
+                    updates after purchase. We only give access to our sensi on
+                    the device you purchase them from. If you add them to a
+                    device that does not have access for some reason, the
+                    settings and codes will not work and we do not guarantee
+                    that this will happen.
                   </div>
                 </div>
               </div>
@@ -966,11 +1181,11 @@
         <div class="row">
           <div class="col-md-8 mx-auto">
             <img
-              src="resources/sensi_logo.png"
-              width="60"
+              src="resources/oggy_logo2.png"
+              width="100"
               class="mb-3 opacity-75"
             />
-            <h4 class="fw-light">OGGY SENSI — beyond limits</h4>
+            <h4 class="fw-bold">OGGY SENSI</h4>
             <p class="text-white-50 small">
               This is not a cheat or panel, only professional optimizations,
               sensitivity guides, and tools to improve your gaming. Creator OGGY
@@ -1083,7 +1298,7 @@
         transform: translateY(0);
       }
       .text-gradient {
-        background: linear-gradient(135deg, #800080, #ff7bda);
+        background: linear-gradient(135deg, #bf40bf, #ff7bda);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -1095,7 +1310,7 @@
         background: #0a0c10;
       }
       ::-webkit-scrollbar-thumb {
-        background: #800080;
+        background: #bf40bf;
         border-radius: 8px;
       }
       .cursor-pointer {
