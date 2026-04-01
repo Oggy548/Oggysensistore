@@ -113,6 +113,14 @@
         transition: all 0.25s;
       }
 
+      .glass-card1 {
+        background: rgba(12, 14, 22, 0.75);
+        backdrop-filter: blur(10px);
+        border-radius: 32px;
+        border: 1px solid rgba(208, 208, 208, 0.25);
+        transition: all 0.25s;
+      }
+
       .pricing-card {
         background: rgba(8, 10, 18, 0.9);
         backdrop-filter: blur(4px);
@@ -434,17 +442,17 @@
       }
     </style>
   </head>
-  <body class="bg-dark-void">
+  <body class="bg-dark-void bg-black">
     <!-- modern navigation -->
     <nav
-      class="navbar navbar-expand-lg py-3 sticky-top"
+      class="navbar navbar-expand-lg py-3 sticky-top bg-black"
       style="
         background: rgba(5, 7, 12, 0.85);
         backdrop-filter: blur(16px);
         z-index: 1030;
       "
     >
-      <div class="container">
+      <div class="container bg-black">
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
           <img
             src="resources/oggy_logo2.png"
@@ -504,7 +512,7 @@
     </nav>
 
     <!-- Hero section -->
-    <section class="hero-gradient pt-5 pb-5" style="min-height: 85vh">
+    <section class="hero-gradient pt-5 pb-5 bg-black" style="min-height: 85vh">
       <div class="container py-4">
         <div class="row align-items-center g-5">
           <div class="col-lg-6 text-center text-lg-start reveal">
@@ -572,10 +580,10 @@
             </div>
           </div>
           <div class="col-lg-6 text-center reveal">
-            <div class="glass-card p-4">
+            <div class="glass-card1 p-4">
               <img
                 src="resources/oggy_logo2.png"
-                style="width: 180px; filter: drop-shadow(0 0 6px #bf40bf)"
+                style="width: 200px; filter: drop-shadow(0 0 6px #bf40bf)"
                 class="mb-3 mb-5 animate__animated animate__tada animate__slow animate__delay-3s animate__infinite"
               />
               <h2 class="h3">OGGY SENSI PACK</h2>
@@ -593,7 +601,7 @@
     </section>
 
     <!-- Features section -->
-    <section id="features" class="py-5">
+    <section id="features" class="py-5 bg-black">
       <div class="container py-4">
         <div class="text-center mb-5 reveal">
           <h2 class="fw-bold">
@@ -651,7 +659,7 @@
     </section>
 
     <!-- DPI tool -->
-    <section id="dpi-tool" class="py-5">
+    <section id="dpi-tool" class="py-5 bg-black">
       <div class="container">
         <div class="glass-card p-4 p-lg-5 text-center reveal">
           <h3 class="mb-2">⚡ SMART DPI CALCULATOR</h3>
@@ -692,7 +700,7 @@
     </section>
 
     <!-- Pricing / Available for Android & IOS with GIF and collapsible details -->
-    <section id="pricing" class="py-5">
+    <section id="pricing" class="py-5 bg-black">
       <div class="container">
         <div class="text-center mb-5 reveal">
           <h2 class="fw-bold">
@@ -847,9 +855,9 @@
                   </div>
                 </div>
                 <div class="mt-3 pt-2 border-top border-secondary">
-                  <p class="fw-bold text-danger mb-1">
-                    🎁 BONUS+ : CapCut Premium, Colour pack, Huds, Content
-                    support, Most suitable sensitives
+                  <p class="fw-lighter text-white mb-1">
+                    🎁 BONUS : Colour pack, Huds, Content support, Most suitable
+                    sensitives
                   </p>
                 </div>
               </div>
@@ -897,7 +905,7 @@
                   class="platform-gif overflow-hidden bg-dark rounded-4 d-flex align-items-center justify-content-center border border-secondary"
                 >
                   <img
-                    src="resources/ios.gif"
+                    src="resources/ios.GIF"
                     alt="ios gif"
                     style="width: 100%; height: 100%; object-fit: cover"
                     onerror="this.src='https://placehold.co/200x200/ce1cb7/white?text=iOS'"
@@ -999,9 +1007,9 @@
                   </div>
                 </div>
                 <div class="mt-3 pt-2 border-top border-secondary">
-                  <p class="fw-bold text-danger mb-1">
-                    🎁 BONUS+ : CapCut Premium, Editing Pack (Colour/Motions),
-                    Most suitable sensitives, Huds, Content Supports
+                  <p class="fw-lighter text-white mb-1">
+                    🎁 BONUS : Colour pack, Huds, Content support, Most suitable
+                    sensitives
                   </p>
                 </div>
               </div>
@@ -1066,7 +1074,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="py-5">
+    <section id="faq" class="py-5 bg-black">
       <div class="container">
         <div class="text-center mb-5 reveal">
           <h2 class="fw-bold">
