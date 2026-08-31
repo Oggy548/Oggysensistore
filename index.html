@@ -1075,6 +1075,118 @@
           </div>
         </div>
 
+        <!-- capcut section -->
+        <div class="row g-5 justify-content-center">
+          <!-- capcut CARD with 1:1 GIF & Collapse Arrow -->
+          <div class="col-lg-5 col-md-10 reveal">
+            <div class="pricing-card p-4 h-100">
+              <!-- Top section with 1:1 GIF instead of logo -->
+              <div
+                class="d-flex justify-content-center align-items-center mb-3"
+              >
+                <div
+                  class="platform-gif overflow-hidden bg-dark rounded-4 d-flex align-items-center justify-content-center border border-secondary"
+                >
+                  <img
+                    src="resources/capcut_pro.png"
+                    style="width: 100%; height: 100%; object-fit: cover"
+                  />
+                </div>
+                <span
+                  class="badge bg-gradient text-white px-3 py-2 rounded-pill"
+                  style="
+                    background: #a0148f;
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    font-size: 0.75rem;
+                  "
+                  >85% OFF</span
+                >
+              </div>
+              <h2 class="mt-2 fw-bold">CapCut Pro</h2>
+              <div class="my-2">
+                <span class="display-5 fw-bold text-white"
+                  >LKR 990(Per Month)</span
+                ><span class="text-white-50"> / $3.00</span>
+              </div>
+
+              <!-- Collapsible section header with arrow -->
+              <div
+                class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top border-secondary cursor-pointer"
+                style="cursor: pointer"
+                onclick="togglePlanDetails('capcutDetails', this)"
+              >
+                <span class="fw-semibold text-white-50"
+                  ><i class="fa-regular fa-rectangle-list me-2"></i>View Plan
+                  Details</span
+                >
+                <i
+                  class="fas fa-chevron-down collapse-toggle-icon"
+                  id="capcutIcon"
+                ></i>
+              </div>
+
+              <!-- Collapsible details (default collapsed) -->
+              <div id="capcutDetails" class="mt-3" style="display: none">
+                <div class="plan-details-grid">
+                  <div class="detail-item">
+                    <i class="fas fa-check-circle"></i> Full Premium Features
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-check-circle"></i> No Watermarks
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-check-circle"></i> Use on 2 devices at the
+                    sametime
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-check-circle"></i> Safe and Secure
+                    Activation
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-check-circle"></i> Work on Mobile + PC
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-check-circle"></i> Smooth Performance & 0
+                    Issues
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrapper-glow" style="width: 100%">
+                <!-- MAIN BUTTON: exact replica of "GARANTA SEU PRODUTO" design with animation -->
+                <button
+                  style="display: block; width: 100%"
+                  class="btn-garanta w-100"
+                  aria-label="Garanta seu produto"
+                  onclick="callcapcut()"
+                >
+                  <span>
+                    Buy Now
+                    <!-- Arrow right SVG (matching Lucide ArrowRight style) -->
+                    <svg
+                      class="btn-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Group buttons centered on mobile -->
         <div
           class="text-center mt-5 d-flex flex-wrap justify-content-center gap-3"
@@ -1266,6 +1378,9 @@
       // Functions for external links
       function callme() {
         window.location.href = "https://wa.me/+94761954162";
+      }
+      function callcapcut() {
+        window.location.href = "https://wa.me/message/VB36MZNXI3M2F1";
       }
       function callChannel() {
         window.location.href =
