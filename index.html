@@ -248,10 +248,11 @@
 
       /* platform gif container */
       .platform-gif {
-        width: 25rem; /* 200px ÷ 16 */
-        height: 25rem;
+        width: min(25rem, 100%);
+        aspect-ratio: 1 / 1;
+        height: auto;
         border-radius: 20px;
-        object-fit: cover;
+        overflow: hidden;
         background: rgba(206, 28, 183, 0.1);
       }
 
@@ -735,7 +736,7 @@
                   <img
                     src="resources/android.gif"
                     alt="android gif"
-                    style="width: 100%; height: 100%; object-fit: cover"
+                    style="width: 100%; height: 100%; object-fit: contain"
                     onerror="
                       this.src =
                         'https://placehold.co/200x200/ce1cb7/white?text=Android'
@@ -921,9 +922,9 @@
                   class="platform-gif overflow-hidden bg-dark rounded-4 d-flex align-items-center justify-content-center border border-secondary"
                 >
                   <img
-                    src="resources/ios.gif"
+                    src="resources/ios.GIF"
                     alt="ios gif"
-                    style="width: 100%; height: 100%; object-fit: cover"
+                    style="width: 100%; height: 100%; object-fit: contain"
                     onerror="
                       this.src =
                         'https://placehold.co/200x200/ce1cb7/white?text=iOS'
@@ -1495,7 +1496,7 @@
 
       //Change tools link here
       function callfreetools() {
-        window.location.href = "https://www.mediafire.com/file/eyo0akn86xx1484/OGGY_SENSI_FREE_TOOL%25F0%259F%25A7%2583.zip/file";
+        window.location.href = "";
       }
 
       // Toggle plan details with arrow rotation
